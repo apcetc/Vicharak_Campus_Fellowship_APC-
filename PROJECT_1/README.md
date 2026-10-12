@@ -127,52 +127,6 @@ The startup counter holds the CPU in its initialization state for approximately 
 
 The actual blink rate depends on the clock frequency and the number of cycles spent executing each loop.
 
-## Repository Structure
-
-```text
-shrikefi-16bit-multicycle-cpu/
-├── README.md
-├── rtl/
-│   └── cpu16.v
-├── docs/
-│   ├── architecture.md
-│   └── demo_photos/
-├── simulation/
-│   └── tb_cpu16.v
-└── LICENSE
-```
-
-This is a suggested structure. Add the testbench and architecture document when they are available; do not include empty or placeholder files as completed work.
-
-## Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/shrikefi-16bit-multicycle-cpu.git
-cd shrikefi-16bit-multicycle-cpu
-```
-
-### 2. Open the Verilog design
-
-Open `rtl/cpu16.v` in your preferred Verilog editor or FPGA development environment.
-
-### 3. Configure the FPGA project
-
-Use the supported ShrikeFi FPGA development flow and the board's official documentation to:
-
-- Add the Verilog source.
-- Set `cpu16` as the top-level module.
-- Configure the clock and top-level I/O according to the board.
-- Generate the FPGA configuration bitstream.
-
-### 4. Program and test the board
-
-Load the generated configuration using the supported ShrikeFi programming workflow.
-
-Observe the FPGA user LED to verify the LED-blinking demonstration.
-
-**Note:** The top-level ports and I/O constraints must be compatible with the actual board and its FPGA toolchain before generating a working bitstream.
 
 ## Current Limitations
 
@@ -180,7 +134,6 @@ Observe the FPGA user LED to verify the LED-blinking demonstration.
 - The processor uses a small, fixed instruction ROM and a 5-bit program counter.
 - Data memory contains 16 words.
 - The design is intended as an educational processor, not a standards-compliant commercial CPU.
-- Simulation and hardware results should be documented separately after testing.
 
 ## Future Improvements
 
