@@ -110,7 +110,7 @@ The processor defines the following opcodes:
 
 The current implementation uses 16-bit instructions and a 5-bit program counter, allowing 32 instruction addresses.
 
-## LED-Bl Oinking Demonstration
+## LED-Blinking Demonstration
 
 The instruction ROM contains a program that repeatedly toggles the LED state.
 
